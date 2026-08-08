@@ -2,5 +2,8 @@
 !README.md
 !early-init.el
 !init.el
+!post-early-init.el
+!post-init.el
+!themes
 !.github/
 !.LICENSE
