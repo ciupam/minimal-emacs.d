@@ -3,9 +3,13 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![](https://jamescherti.com/misc/made-for-gnu-emacs.svg)
 
+- Git repository: [minimal-emacs.d](https://github.com/jamescherti/minimal-emacs.d)
+- Author: [James Cherti](https://www.jamescherti.com/)
+- License: GPL
+
 ## Introduction
 
-The **minimal-emacs.d** project is a **fast and lightweight** minimal Emacs starter kit (`init.el` and `early-init.el`) that **gives you full control over your configuration**. It provides better defaults, an optimized startup, and a clean foundation for building your own vanilla Emacs setup.
+The [minimal-emacs.d](https://github.com/jamescherti/minimal-emacs.d) project is a **fast and lightweight** minimal Emacs starter kit (`init.el` and `early-init.el`) that **gives you full control over your configuration**. It provides better defaults, an optimized startup, and a clean foundation for building your own vanilla Emacs setup.
 
 Each setting in minimal-emacs.d is carefully chosen to answer this question: does it provide a better default that modernizes Emacs while keeping it lightweight, fast and stable?
 
@@ -21,10 +25,10 @@ Building the *minimal-emacs.d* `init.el` and `early-init.el` was the result of *
 
 The *minimal-emacs.d* project is:
 
-* **Minimal yet effective:** A solid starting point.
-* **Better defaults:** Improved settings for usability, UI, garbage collection, and built-in packages. (Emacs comes with many well-designed defaults, but it also retains some less-than-ideal settings, often due to historical constraints or legacy compatibility.)
-* **0 packages loaded / No forced modes:** Unlike other frameworks, *minimal-emacs.d* does not impose modes or require packages. **You have full control** over which global or minor modes to enable.
-* **Customizable foundation:** Designed to be extended, not replaced. This README offers extensive recommendations for customizing your configuration.
+- **Minimal yet effective:** A solid starting point.
+- **Better defaults:** Improved settings for usability, UI, garbage collection, and built-in packages. (Emacs comes with many well-designed defaults, but it also retains some less-than-ideal settings, often due to historical constraints or legacy compatibility.)
+- **0 packages loaded / No forced modes:** Unlike other frameworks, *minimal-emacs.d* does not impose modes or require packages. **You have full control** over which global or minor modes to enable.
+- **Customizable foundation:** Designed to be extended, not replaced. This README offers extensive recommendations for customizing your configuration.
 
 The *minimal-emacs.d* project includes two initialization files:
 
@@ -74,14 +78,16 @@ Startup speed depends on hardware and disk speed. For consistent comparisons, te
 - [sunng on Reddit](https://www.reddit.com/r/emacs/comments/1p9y8h4/comment/ns1nehi/): "Nice work! I just created a nix flake to using it on my dev servers"
 - [zackattackz287 on Reddit](https://www.reddit.com/r/emacs/comments/1rsmaut/comment/oa8okca/): "Congrats and thank you (and the community around minimal.d) for your work! I've been using it for quite a while now and I've not ever had any breakages when merging changes from main..."
 - [utility on Reddit](https://www.reddit.com/r/emacs/comments/1rsmaut/comment/oa8wrap/): "Excellent. I use this and I'm very happy with it!"
-- [Karrot_Kream](https://news.ycombinator.com/item?id=45784591): "If you don't want to use a distribution like Doom (which I don't fwiw and I've been using emacs for 20-something years), then **I'm a big fan of minimal-emacs a compact init.el and early-init.el that configures vanilla emacs into a good, default state**. From there I would pick and choose which packages..."
+- [Karrot_Kream](https://news.ycombinator.com/item?id=45784591): "If you don't want to use a distribution like Doom (which I don't fwiw and I've been using emacs for 20-something years), then I'm a big fan of minimal-emacs a compact init.el and early-init.el that configures vanilla emacs into a good, default state. From there I would pick and choose which packages..."
 - [uutangohotel](https://news.ycombinator.com/item?id=45783901): "https://github.com/jamescherti/minimal-emacs.d is a great starting point for owning your config."
+- [viperML](https://www.reddit.com/r/emacs/comments/1vq0aez/comment/p4af5a7/):  "Hey, I just want to deeply thank you for creating this! I've started using emacs recently, and your project allowed me to focus on configuring more impactful things. I also think a project like this is useful to clear the mist of knowledge regarding "tweaks" that don't really affect performance, and are snake oil. For now I include your repository in my .config/emacs, and even if in the future I fork it and go completely vanilla, it will have paid dividends. "
 - [kleinishere](https://news.ycombinator.com/item?id=45784429): "Came here to find this. MANY upvotes. I used Doom for a couple months. Then started considering a vanilla eMacs. I started taking notes on packages I found highly recommended and interesting. Then I found this [minimal-emacs.d]. And the author has done all that work and then made it into a "let me walk through a config" including a lot of the most recommended packages and sensible configs. Gives you the lesson of building a config, knowing what's in your config, and then being fluent in changing it. He also has more notes on his blog about the packages + more : https://www.jamescherti.com/essential-emacs-packages/ And I now feel comfortable making changes myself."
 - [microamp](https://github.com/jamescherti/minimal-emacs.d/issues/91): "...thanks for creating and maintaining the project. It's been my favourite starter kit for Emacs by far."
 - [dewyke](https://www.reddit.com/r/emacs/comments/1tuowci/minimalemacsd_a_customizable_initel_and/): "I spent the weekend migrating to this and it's been brilliant, thank you. "
 - [NagNawed](https://www.reddit.com/r/emacs/comments/1tuowci/comment/opormk7/): "I love this. Great starting point, even better than some of the distros (if you are not using evil mode)..."
 - [JamesBrickley](https://www.reddit.com/r/emacs/comments/1tzfbsq/comment/oqds13q/): "I'm really enjoying James Cherti's Minimal-Emacs.d, Compile-Angle, Easy-Session, and Buffer-Terminator packages."
 - [david-bakin](https://github.com/jamescherti/minimal-emacs.d/issues/94#issuecomment-4721692648): "This emacs-starter-kit framework is fantastic. After years ... actually, decades ... of just using someone else's .emacs.d configuration and then using emacs in a limited way (only to edit text and code and doing everything else at the command line or via other tools) I am now fully transitioning to Emacs as my everything and of all the frameworks I looked at this is the one I can really understand. (And your personal support obviously is part of that.) I'm working through init.el line-by-line (having already done early-init.el) and not only am I getting a better picture of Emacs customization than I've ever had, I'm actually configuring Emacs the way I really like, now that I'm learning what the knobs I can turn are."
+- [jacmoe](https://www.reddit.com/r/emacs/comments/1vq0aez/comment/p5zmlmf/): "I've been using this for a while. It helped me to move away from Doom Emacs and into something manageable. Thanks, James! Also, I am one of the few Emacs users who are not using Emacs as a long running process, so fast and lightweight is what I want :)"
 
 Please share your configuration. It could serve as inspiration for other users.
 
@@ -102,15 +108,16 @@ git clone --depth 1 https://github.com/jamescherti/minimal-emacs.d ~/.emacs.d
 
 To install *minimal-emacs.d* in a non-default directory, use the `--init-directory` Emacs option to specify your desired configuration path. For example, to install *minimal-emacs.d* in `~/.minimal-emacs.d/`, follow these steps:
 
-1. Clone the repository into `~/.minimal-emacs.d/` using:
-   ```
-   git clone --depth 1 https://github.com/jamescherti/minimal-emacs.d ~/.minimal-emacs.d
-   ```
+Clone the repository into `~/.minimal-emacs.d/` using:
 
-2. Start Emacs with the new configuration directory:
-   ```
-   emacs --init-directory ~/.minimal-emacs.d/
-   ```
+```
+git clone --depth 1 https://github.com/jamescherti/minimal-emacs.d ~/.minimal-emacs.d
+```
+
+Then start Emacs with the new configuration directory:
+```
+emacs --init-directory ~/.minimal-emacs.d/
+```
 
 ## Update minimal-emacs.d
 
@@ -139,7 +146,7 @@ Always begin your `pre-init.el`, `post-init.el`, `post-early-init.el`, and `pre-
 
 Replace `FILENAME.el` with the actual name and DESCRIPTION with a brief description of its purpose.
 
-*(Only if you know what you're doing: Removing `no-byte-compile: t;` from your init files allows Emacs to compile them, improving load and execution speed. However, if you do so, you may need to add required dependencies. For example, if you're using `use-package`, add `(require 'use-package)` at the top of `post-init.el` to ensure all necessary `use-package` variables and functions are loaded. **The only init file where `no-byte-compile: t` should never be removed is `early-init.el`**, because if this file is compiled, Emacs may load an outdated compiled version.)*
+*(Only if you know what you're doing: Removing `no-byte-compile: t;` from your init files allows Emacs to compile them, improving load and execution speed. However, if you do so, you may need to add required dependencies. For example, if you're using `use-package`, add `(require 'use-package)` at the top of `post-init.el` to ensure all necessary `use-package` variables and functions are loaded.)*
 
 **Important:** The examples in this README reference pre/post init files in the `~/.emacs.d/` directory, but the files `pre-early-init.el`, `post-early-init.el`, `pre-init.el`, and `post-init.el` should be placed in the same directory as `init.el` and `early-init.el`, regardless of their location.
 
@@ -189,13 +196,14 @@ This README.md offers guidance on installing optional external packages. While E
 
 Native compilation enhances Emacs performance by converting Elisp code into native machine code, resulting in faster execution and improved responsiveness.
 
-1. To check if native compilation is enabled, evaluate:
-   ```elisp
-   (native-comp-available-p)
-   ```
-   (A non-nil result indicates that native compilation is available.)
+To check if native compilation is enabled, evaluate:
+```elisp
+(native-comp-available-p)
+```
 
-2. Ensure all libraries are byte-compiled and native-compiled using [compile-angel.el](https://github.com/jamescherti/compile-angel.el). To install compile-angel, add the following code to the `~/.emacs.d/post-init.el` file:
+(A non-nil result indicates that native compilation is available.)
+
+Ensure all libraries are byte-compiled and native-compiled using [compile-angel.el](https://github.com/jamescherti/compile-angel.el). To install compile-angel, add the following code to the `~/.emacs.d/post-init.el` file:
 ```emacs-lisp
 ;; Native compilation enhances Emacs performance by converting Elisp code into
 ;; native machine code, resulting in faster execution and improved
@@ -206,10 +214,6 @@ Native compilation enhances Emacs performance by converting Elisp code into nati
 (use-package compile-angel
   :demand t
   :config
-  ;; The following disables compilation of packages during installation;
-  ;; compile-angel will handle it.
-  (setq package-native-compile nil)
-
   ;; Set `compile-angel-verbose' to nil to disable compile-angel messages.
   ;; (When set to nil, compile-angel won't show which file is being compiled.)
   (setq compile-angel-verbose t)
@@ -326,9 +330,7 @@ The recentf, savehist, saveplace, and auto-revert built-in packages are already 
   (save-place-mode 1))
 ```
 
-### Safety: Auto-Save
-
-#### auto-save-mode (Prevent data loss in case of crashes)
+### auto-save-mode (Prevent data loss in case of crashes)
 
 Enabling `auto-save-mode` mitigates the risk of data loss in the event of a crash. Auto-saved data can be recovered using the `recover-file` or `recover-session` functions.
 
@@ -346,26 +348,6 @@ To enable autosave, add the following to `~/.emacs.d/post-init.el`:
 (setq auto-save-timeout 30)
 ```
 
-#### auto-save-visited-mode (Save file buffers after a few seconds of inactivity)
-
-When `auto-save-visited-mode` is enabled, Emacs will auto-save file-visiting buffers after a certain amount of idle time if the user forgets to save it with `save-buffer` or `C-x s` for example.
-
-This is different from `auto-save-mode`: `auto-save-mode` periodically saves all modified buffers, creating backup files, including those not associated with a file, while `auto-save-visited-mode` only saves file-visiting buffers after a period of idle time, directly saving to the file itself without creating backup files.
-
-``` emacs-lisp
-;; When auto-save-visited-mode is enabled, Emacs will auto-save file-visiting
-;; buffers after a certain amount of idle time if the user forgets to save it
-;; with save-buffer or C-x s for example.
-;;
-;; This is different from auto-save-mode: auto-save-mode periodically saves
-;; all modified buffers, creating backup files, including those not associated
-;; with a file, while auto-save-visited-mode only saves file-visiting buffers
-;; after a period of idle time, directly saving to the file itself without
-;; creating backup files.
-(setq auto-save-visited-interval 5)   ; Save after 5 seconds if inactivity
-(auto-save-visited-mode 1)
-```
-
 ### Completion System (Corfu, Vertico, Consult)
 
 [Corfu](https://github.com/minad/corfu) enhances in-buffer completion by displaying a compact popup with current candidates, positioned either below or above the point. Candidates can be selected by navigating up or down.
@@ -380,14 +362,16 @@ To configure `corfu` and `cape`, add the following to `~/.emacs.d/post-init.el`:
 ;; current candidates, positioned either below or above the point. Candidates
 ;; can be selected by navigating up or down.
 (use-package corfu
-  :custom
-  ;; Hide commands in M-x which do not apply to the current mode.
-  (read-extended-command-predicate #'command-completion-default-include-p)
-  ;; Disable Ispell completion function. As an alternative try `cape-dict'.
-  (text-mode-ispell-word-completion nil)
-  (tab-always-indent 'complete)
-
   :init
+  ;; Disable Ispell completion function. As an alternative try `cape-dict'.
+  (setq text-mode-ispell-word-completion nil)
+
+  ;; Hide commands in M-x which do not apply to the current mode.
+  (setq read-extended-command-predicate #'command-completion-default-include-p)
+
+  ;; Enable completion by pressing TAB.
+  (setq tab-always-indent 'complete)
+
   (global-corfu-mode 1))
 
 ;; Cape, or Completion At Point Extensions, extends the capabilities of
@@ -406,6 +390,8 @@ To configure `corfu` and `cape`, add the following to `~/.emacs.d/post-init.el`:
 
 **Note:** Setting `corfu-auto` to `t` to enable automatic completion is discouraged for both performance and security reasons. Continuous polling of heavy completion-at-point functions (CAPFs) and external LSP servers on every keystroke introduces latency. More significantly, automatic completion introduces security vulnerabilities when working with untrusted code. This background parsing forces external binaries and language servers to process buffer contents without explicit user intent, creating attack vectors for arbitrary code execution. It is recommended to activate `corfu-auto` only in directories where all files are trusted.
 
+Related article: [Why Emacs Consult async searches feel slow and how to speed them up? (consult-fd, consult-find, consult-grep, consult-ripgrep...)](https://www.jamescherti.com/emacs-consult-speed-async-searche-grep-ripgrep-fd-find/)
+
 ### Vertico, Consult, Marginalia, and Embark
 
 [Vertico](https://github.com/minad/vertico), [Consult](https://github.com/minad/consult), and [Embark](https://github.com/oantolin/embark) collectively enhance Emacs' completion and navigation capabilities.
@@ -423,23 +409,22 @@ Add the following to `~/.emacs.d/post-init.el` to set up Vertico, Consult, and E
 ;; Vertico provides a vertical completion interface, making it easier to
 ;; navigate and select from completion candidates (e.g., when `M-x` is pressed).
 (use-package vertico
-  ;; :custom
-  ;; (vertico-scroll-margin 0) ;; Different scroll margin
-  ;; (vertico-count 20) ;; Show more candidates
-  ;; (vertico-resize t) ;; Grow and shrink the Vertico minibuffer
-  ;; (vertico-cycle t) ;; Enable cycling for `vertico-next/previous'
   :init
+  ;; (setq vertico-scroll-margin 0) ;; Different scroll margin
+  ;; (setq vertico-count 20) ;; Show more candidates
+  ;; (setq vertico-resize t) ;; Grow and shrink the Vertico minibuffer
+  ;; (setq vertico-cycle t) ;; Enable cycling for `vertico-next/previous'
   (vertico-mode 1))
 
 ;; Vertico leverages Orderless' flexible matching capabilities, allowing users
 ;; to input multiple patterns separated by spaces, which Orderless then
 ;; matches in any order against the candidates.
 (use-package orderless
-  :custom
-  (completion-styles '(orderless basic))
-  (completion-category-overrides '((file (styles partial-completion))))
+  :init
+  (setq completion-styles '(orderless basic))
+  (setq completion-category-overrides '((file (styles partial-completion))))
   ;; Emacs 31: partial-completion behaves like substring
-  (completion-pcm-leading-wildcard t))
+  (setq completion-pcm-leading-wildcard t))
 
 ;; Marginalia allows Embark to offer you preconfigured actions in more contexts.
 ;; In addition to that, Marginalia also enhances Vertico by adding rich
@@ -686,38 +671,39 @@ Configuring Vim keybindings in Emacs can greatly enhance your editing efficiency
 
 ;; Vim emulation
 (use-package evil
-  :custom
-  ;; Make :s in visual mode operate only on the actual visual selection
-  ;; (character or block), instead of the full lines covered by the selection
-  (evil-ex-visual-char-range t)
-  ;; Use Vim-style regular expressions in search and substitute commands,
-  ;; allowing features like \v (very magic), \zs, and \ze for precise matches
-  (evil-ex-search-vim-style-regexp t)
-  ;; Enable automatic horizontal split below
-  (evil-split-window-below t)
-  ;; Enable automatic vertical split to the right
-  (evil-vsplit-window-right t)
-  ;; Disable echoing Evil state to avoid replacing eldoc
-  (evil-echo-state nil)
-  ;; Do not move cursor back when exiting insert state
-  (evil-move-cursor-back nil)
-  ;; Make `v$` exclude the final newline
-  (evil-v$-excludes-newline t)
-  ;; Allow C-h to delete in insert state
-  (evil-want-C-h-delete t)
-  ;; Enable C-u to delete back to indentation in insert state
-  (evil-want-C-u-delete t)
-  ;; Enable fine-grained undo behavior
-  (evil-want-fine-undo t)
-  ;; Disable wrapping of search around buffer
-  (evil-search-wrap nil)
-  ;; Whether Y yanks to the end of the line
-  (evil-want-Y-yank-to-eol t)
-
   :init
   ;; It has to be defined before evil
   (setq evil-want-integration t)
   (setq evil-want-keybinding nil)
+
+  ;; Make :s in visual mode operate only on the actual visual selection
+  ;; (character or block), instead of the full lines covered by the selection
+  (setq evil-ex-visual-char-range t)
+  ;; Use Vim-style regular expressions in search and substitute commands,
+  ;; allowing features like \v (very magic), \zs, and \ze for precise matches
+  (setq evil-ex-search-vim-style-regexp t)
+  ;; Enable automatic horizontal split below
+  (setq evil-split-window-below t)
+  ;; Enable automatic vertical split to the right
+  (setq evil-vsplit-window-right t)
+  ;; Disable echoing Evil state to avoid replacing eldoc
+  (setq evil-echo-state nil)
+  ;; Do not move cursor back when exiting insert state
+  (setq evil-move-cursor-back nil)
+  ;; Make `v$` exclude the final newline
+  (setq evil-v$-excludes-newline t)
+  ;; Enable fine-grained undo behavior
+  (setq evil-want-fine-undo t)
+  ;; Disable wrapping of search around buffer
+  (setq evil-search-wrap nil)
+  ;; Allow C-h to delete in insert state
+  (setq evil-want-C-h-delete t)
+  ;; Enable C-u to delete back to indentation in insert state
+  (setq evil-want-C-u-delete t)
+  ;; Whether Y yanks to the end of the line
+  (setq evil-want-Y-yank-to-eol t)
+
+  ;; Start `evil-mode'
   (evil-mode 1)
 
   :config
@@ -765,19 +751,19 @@ The `evil-surround` package simplifies handling surrounding characters, such as 
 ;; using S" or gS".
 (use-package evil-surround
   :after evil
-  :custom
-  (evil-surround-pairs-alist
-   '((?\( . ("(" . ")"))
-     (?\[ . ("[" . "]"))
-     (?\{ . ("{" . "}"))
-
-     (?\) . ("(" . ")"))
-     (?\] . ("[" . "]"))
-     (?\} . ("{" . "}"))
-
-     (?< . ("<" . ">"))
-     (?> . ("<" . ">"))))
   :init
+  (setq evil-surround-pairs-alist
+        '((?\( . ("(" . ")"))
+          (?\[ . ("[" . "]"))
+          (?\{ . ("{" . "}"))
+
+          (?\) . ("(" . ")"))
+          (?\] . ("[" . "]"))
+          (?\} . ("{" . "}"))
+
+          (?< . ("<" . ">"))
+          (?> . ("<" . ">"))))
+  :config
   (global-evil-surround-mode 1))
 ```
 
@@ -881,8 +867,8 @@ This configuration sets up `markdown-mode` with deferred loading to improve star
              markdown-toc-generate-or-refresh-toc
              markdown-toc-delete-toc
              markdown-toc--toc-already-present-p)
-  :custom
-  (markdown-toc-header-toc-title "**Table of Contents**"))
+  :init
+  (setq markdown-toc-header-toc-title "**Table of Contents**"))
 ```
 
 Once installed:
@@ -907,12 +893,12 @@ The [kirigami](https://github.com/jamescherti/kirigami.el) package provides a un
 
 With Kirigami, folding key bindings only need to be configured **once**. After that, the same keys work consistently across all supported major and minor modes, providing a unified and predictable experience for opening and closing folds. The available commands include:
 
-* `kirigami-open-fold`: Open the fold at point.
-* `kirigami-open-fold-rec`: Open the fold at point recursively.
-* `kirigami-close-fold`: Close the fold at point.
-* `kirigami-open-folds`: Open all folds in the buffer.
-* `kirigami-close-folds`: Close all folds in the buffer.
-* `kirigami-toggle-fold`: Toggle the fold at point.
+- `kirigami-open-fold`: Open the fold at point.
+- `kirigami-open-fold-rec`: Open the fold at point recursively.
+- `kirigami-close-fold`: Close the fold at point.
+- `kirigami-open-folds`: Open all folds in the buffer.
+- `kirigami-close-folds`: Close all folds in the buffer.
+- `kirigami-toggle-fold`: Toggle the fold at point.
 
 To configure **kirigami**, add the following to `~/.emacs.d/post-init.el`:
 ```elisp
@@ -1012,8 +998,8 @@ For folding based on indentation levels, the **[outline-indent](https://github.c
 ;; - and other features.
 (use-package outline-indent
   :commands outline-indent-minor-mode
-  :custom
-  (outline-indent-ellipsis " ▼"))
+  :init
+  (setq outline-indent-ellipsis " ▼"))
 
 ;; Python
 (add-hook 'python-mode-hook #'outline-indent-minor-mode)
@@ -1052,9 +1038,9 @@ It is also recommended to install [treesit-fold](https://github.com/emacs-tree-s
              treesit-fold-open-recursively
              treesit-fold-line-comment-mode)
 
-  :custom
-  (treesit-fold-line-count-show t)
-  (treesit-fold-line-count-format " ▼")
+  :init
+  (setq treesit-fold-line-count-show t)
+  (setq treesit-fold-line-count-format " ▼")
 
   :config
   (set-face-attribute 'treesit-fold-replacement-face nil
@@ -1147,100 +1133,19 @@ The [yasnippet-snippets](https://github.com/AndreaCrotti/yasnippet-snippets) pac
 ;; can include placeholders, fields, and dynamic content.
 (use-package yasnippet
   :after yasnippet-snippets
-  :custom
-  (yas-also-auto-indent-first-line t)  ; Indent first line of snippet
-  (yas-also-indent-empty-lines t)
-  (yas-snippet-revival nil)  ; Setting this to t causes issues with undo
-  (yas-wrap-around-region nil) ; Do not wrap region when expanding snippets
-  (yas-indent-line 'fixed) ; Do not auto-indent snippet content
-  ;; (yas-triggers-in-field nil)  ; Disable nested snippet expansion
-  ;; (yas-prompt-functions '(yas-no-prompt))  ; No prompt for snippet choices
-
   :init
+  (setq yas-also-auto-indent-first-line t)  ; Indent first line of snippet
+  (setq yas-also-indent-empty-lines t)
+  (setq yas-snippet-revival nil)  ; Setting this to t causes issues with undo
+  (setq yas-wrap-around-region nil) ; Do not wrap region when expanding snippets
+  (setq yas-indent-line 'fixed) ; Do not auto-indent snippet content
+  ;; (setq yas-triggers-in-field nil)  ; Disable nested snippet expansion
+  ;; (setq yas-prompt-functions '(yas-no-prompt))  ; No prompt for snippet choices
+
   ;; Suppress verbose messages
   (setq yas-verbosity 0)
+
   (yas-global-mode 1))
-```
-
-### Spell checker
-
-The `flyspell` package is a built-in Emacs minor mode that provides on-the-fly spell checking. It highlights misspelled words as you type, offering interactive corrections. In text modes, it checks the entire buffer, while in programming modes, it typically checks only comments and strings. It integrates with external spell checkers like `aspell`, `hunspell`, or `ispell` to provide suggestions and corrections.
-
-NOTE: `flyspell-mode` can become slow when using Aspell, especially with large buffers or aggressive suggestion settings like `--sug-mode=ultra`. This slowdown occurs because Flyspell checks words dynamically as you type or navigate text, requiring frequent communication between Emacs and the external Aspell process. Each check involves sending words to Aspell and receiving results, which introduces overhead from process invocation and inter-process communication.
-
-To configure **flyspell**, add the following to `~/.emacs.d/post-init.el`:
-``` emacs-lisp
-;; The flyspell package is a built-in Emacs minor mode that provides
-;; on-the-fly spell checking. It highlights misspelled words as you type,
-;; offering interactive corrections. In text modes, it checks the entire buffer,
-;; while in programming modes, it typically checks only comments and strings. It
-;; integrates with external spell checkers like aspell, hunspell, or
-;; ispell to provide suggestions and corrections.
-;;
-;; NOTE: flyspell-mode can become slow when using Aspell, especially with large
-;; buffers or aggressive suggestion settings like --sug-mode=ultra. This
-;; slowdown occurs because Flyspell checks words dynamically as you type or
-;; navigate text, requiring frequent communication between Emacs and the
-;; external Aspell process. Each check involves sending words to Aspell and
-;; receiving results, which introduces overhead from process invocation and
-;; inter-process communication.
-(use-package ispell
-  :ensure nil
-  :commands (ispell ispell-minor-mode)
-  :init
-  (setq ispell-quietly t)
-
-  ;; Set the ispell program name to aspell
-  (setq ispell-program-name "aspell")
-
-  ;; Define the "en_US" spell-check dictionary locally, telling Emacs to use
-  ;; UTF-8 encoding, match words using alphabetic characters, allow apostrophes
-  ;; inside words, treat non-alphabetic characters as word boundaries, and pass
-  ;; -d en_US to the underlying spell-check program.
-  (setq ispell-local-dictionary-alist
-        '(("en_US" "[[:alpha:]]" "[^[:alpha:]]" "[']" nil ("-d" "en_US") nil utf-8)))
-
-  ;; Configures Aspell's suggestion mode to "ultra", which provides more
-  ;; aggressive and detailed suggestions for misspelled words. The language
-  ;; is set to "en_US" for US English, which can be replaced with your desired
-  ;; language code (e.g., "en_GB" for British English, "de_DE" for German).
-  (setq ispell-extra-args '("--sug-mode=ultra"
-                            "--lang=en_US"
-                            ;; The --run-together flag instructs Aspell to accept
-                            ;; words formed by combining two or more valid dictionary
-                            ;; words without spaces, treating the resulting string as
-                            ;; valid.
-                            ;;
-                            ;; This is excellent for source code. Code is heavily
-                            ;; populated with compound variable names and technical
-                            ;; terms (e.g., filepath, buffername, checkbox). This
-                            ;; flag stops the spell checker from highlighting every
-                            ;; combined word as an error, significantly reducing
-                            ;; false positives and visual noise in your programming
-                            ;; buffers.
-                            "--run-together"))
-
-
-  (defun my-ispell-text-mode-setup ()
-    "Remove the --run-together argument from Aspell in text modes."
-    (setq-local ispell-extra-args (remove "--run-together" ispell-extra-args)))
-
-  (add-hook 'text-mode-hook #'my-ispell-text-mode-setup))
-
-;; The flyspell package is a built-in Emacs minor mode that provides
-;; on-the-fly spell checking. It highlights misspelled words as you type,
-;; offering interactive corrections.
-(use-package flyspell
-  :ensure nil
-  :commands flyspell-mode
-  :hook
-  ((prog-mode . flyspell-prog-mode)
-   (text-mode . (lambda()
-                  (if (or (derived-mode-p 'yaml-mode)
-                          (derived-mode-p 'yaml-ts-mode)
-                          (derived-mode-p 'ansible-mode))
-                      (flyspell-prog-mode 1)
-                    (flyspell-mode 1))))))
 ```
 
 ### Automatic removal of trailing whitespace on save
@@ -1262,20 +1167,20 @@ To enable **stripspace** and automatically delete trailing whitespace, add the f
          (text-mode . stripspace-local-mode)
          (conf-mode . stripspace-local-mode))
 
-  :custom
+  :init
   ;; The `stripspace-only-if-initially-clean' option:
   ;; - nil to always delete trailing whitespace.
   ;; - Non-nil to only delete whitespace when the buffer is clean initially.
   ;; (The initial cleanliness check is performed when `stripspace-local-mode'
   ;; is enabled.)
-  (stripspace-only-if-initially-clean nil)
+  (setq stripspace-only-if-initially-clean nil)
 
   ;; Enabling `stripspace-restore-column' preserves the cursor's column position
   ;; even after stripping spaces. This is useful in scenarios where you add
   ;; extra spaces and then save the file. Although the spaces are removed in the
   ;; saved file, the cursor remains in the same position, ensuring a consistent
   ;; editing experience without affecting cursor placement.
-  (stripspace-restore-column t))
+  (setq stripspace-restore-column t))
 ```
 
 ### Highlighting uncommitted changes in the buffer margin (e.g., Git changes)
@@ -1312,16 +1217,16 @@ To configure **org-mode**, add the following to `~/.emacs.d/post-init.el`:
   :commands (org-mode org-version)
   :mode
   ("\\.org\\'" . org-mode)
-  :custom
-  (org-hide-leading-stars t)
-  (org-startup-indented t)
-  (org-adapt-indentation nil)
-  (org-edit-src-content-indentation 0)
-  ;; (org-fontify-done-headline t)
-  ;; (org-fontify-todo-headline t)
-  ;; (org-fontify-whole-heading-line t)
-  ;; (org-fontify-quote-and-verse-blocks t)
-  (org-startup-truncated t))
+  :init
+  (setq org-hide-leading-stars t)
+  (setq org-startup-indented t)
+  (setq org-adapt-indentation nil)
+  (setq org-edit-src-content-indentation 0)
+  ;; (setq org-fontify-done-headline t)
+  ;; (setq org-fontify-todo-headline t)
+  ;; (setq org-fontify-whole-heading-line t)
+  ;; (setq org-fontify-quote-and-verse-blocks t)
+  (setq org-startup-truncated t))
 ```
 
 The `org-appear` package temporarily reveals normally hidden elements (such as emphasis markers, links, or entities) when the cursor enters them, and hides them again when the cursor leaves. To configure **org-appear**, add the following to `~/.emacs.d/post-init.el`:
@@ -1369,6 +1274,10 @@ Here is an example of how to configure Eglot to enable or disable certain option
                          :rope_autoimport (:enabled :json-false)))))
 ```
 
+Related articles:
+- [Configuring Emacs Eglot for Better Performance and Latency](https://www.jamescherti.com/emacs-eglot-performance/)
+- [Configuring Eglot for Python Development in Emacs: Integrating python-lsp-server (pylsp) with Linters and Formatters](https://www.jamescherti.com/emacs-python-dev-using-eglot-pylsp-ruff-pylint-flake8/)
+
 ### Safely terminating unused buffers
 
 The [buffer-terminator](https://github.com/jamescherti/buffer-terminator.el) Emacs package *automatically and safely kills buffers*, ensuring a clean and efficient workspace while *enhancing the performance of Emacs* by reducing open buffers, which minimizes active modes, timers, processes...
@@ -1379,19 +1288,18 @@ To configure **buffer-terminator**, add the following to `~/.emacs.d/post-init.e
 
 ```emacs-lisp
 (use-package buffer-terminator
-  :custom
+  :init
   ;; Enable/Disable verbose mode to log buffer cleanup events
-  (buffer-terminator-verbose nil)
+  (setq buffer-terminator-verbose nil)
 
   ;; Set the inactivity timeout (in seconds) after which buffers are considered
   ;; inactive (default is 30 minutes):
-  (buffer-terminator-inactivity-timeout (* 30 60)) ; 30 minutes
+  (setq buffer-terminator-inactivity-timeout (* 30 60)) ; 30 minutes
 
   ;; Define how frequently the cleanup process should run (default is every 10
   ;; minutes):
-  (buffer-terminator-interval (* 10 60)) ; 10 minutes
+  (setq buffer-terminator-interval (* 10 60)) ; 10 minutes
 
-  :init
   (buffer-terminator-mode 1))
 ```
 
@@ -1541,8 +1449,8 @@ To configure **helpful**, add the following to `~/.emacs.d/post-init.el`:
   ([remap describe-key] . helpful-key)
   ([remap describe-symbol] . helpful-symbol)
   ([remap describe-variable] . helpful-variable)
-  :custom
-  (helpful-max-buffers 7))
+  :init
+  (setq helpful-max-buffers 7))
 ```
 
 ### Efficient jumps
@@ -1578,21 +1486,21 @@ To configure **bufferfile**, add the following to `~/.emacs.d/post-init.el`:
   :commands (bufferfile-copy
              bufferfile-rename
              bufferfile-delete)
-  :custom
+  :init
   ;; If non-nil, display messages during file renaming operations
-  (bufferfile-verbose nil)
+  (setq bufferfile-verbose nil)
 
   ;; If non-nil, enable using version control (VC) when available
-  (bufferfile-use-vc nil)
+  (setq bufferfile-use-vc nil)
 
   ;; Specifies the action taken after deleting a file and killing its buffer.
-  (bufferfile-delete-switch-to 'parent-directory))
+  (setq bufferfile-delete-switch-to 'parent-directory))
 ```
 
 **The *bufferfile* package overcomes limitations in Emacs' built-in functions:**
 
-* **Emacs built-in renaming:** While indirect buffers continue to reference the correct file path, their buffer names can become outdated.
-* **Emacs built-in deleting:** Indirect buffers are not automatically removed when the base buffer or another indirect buffer is deleted.
+- **Emacs built-in renaming:** While indirect buffers continue to reference the correct file path, their buffer names can become outdated.
+- **Emacs built-in deleting:** Indirect buffers are not automatically removed when the base buffer or another indirect buffer is deleted.
 
 **The bufferfile package resolves these issues** by updating buffer names when a file is renamed and removing all related buffers, including indirect ones, when a file is deleted.
 
@@ -1690,10 +1598,26 @@ To enable *quick-sdcv*, add the following to your `~/.emacs.d/post-init.el`:
 
 ```emacs-lisp
 (use-package quick-sdcv
-  :custom
-  (quick-sdcv-unique-buffers t)
-  (quick-sdcv-dictionary-prefix-symbol "►")
-  (quick-sdcv-ellipsis " ▼"))
+  :commands (quick-sdcv-search-at-point
+             quick-sdcv-search-input)
+  :init
+  ;; When non-nil, a distinct buffer is created for each word searched.
+  (setq quick-sdcv-unique-buffers t)
+
+  ;; Change the prefix character used before dictionary names, replacing the
+  ;; default `-->`:
+  (setq quick-sdcv-dictionary-prefix-symbol "►")
+
+  ;; Change the quick-sdcv dictionaries ellipsis from … to " ▼"
+  ;; (In quick-sdcv buffers, `outline-minor-mode' is enabled by default, which
+  ;; allows sections corresponding to individual dictionaries to be folded. The
+  ;; ellipsis … indicates a folded section, making it easy to collapse all
+  ;; dictionaries and expand only those of interest.)
+  (setq quick-sdcv-ellipsis " ▼")
+
+  ;; Automatically fold all dictionary entries when performing a search.
+  ;; You can then unfold the dictionaries you want to read.
+  (setq quick-sdcv-fold-on-search t))
 ```
 
 Here are the main interactive functions:
@@ -1738,10 +1662,8 @@ This category-based behavior can be further customized by assigning a function t
 To configure the *persist-text-scale* package, add the following to your `~/.emacs.d/post-init.el`:
 ```elisp
 (use-package persist-text-scale
-  :custom
-  (text-scale-mode-step 1.07)
-
   :init
+  (setq text-scale-mode-step 1.07)
   (persist-text-scale-mode 1))
 ```
 
@@ -1795,6 +1717,16 @@ To configure the *vterm* package, add the following to your `~/.emacs.d/post-ini
 ```
 
 The `vterm` terminal emulator can be started with `M-x vterm`.
+
+Related article: [Why Your Emacs Terminal is Slow and the Configuration to Fix It (vterm, eat, ghostel, term, and ansi-term)](https://www.jamescherti.com/emacs-terminal-performance-vterm-eat-ansi-term-ghostel/)
+
+### The Emacs spell checker
+
+The `ispell` package serves as the underlying interface in Emacs for communicating with external spell checking programs. Building upon this, the `flyspell` package is a built-in minor mode that provides on-the-fly spell checking. It highlights misspelled words as you type and offers interactive corrections.
+
+**This article presents a configuration that sets up the Emacs spell checker: [Emacs Spell Checker: Configuring Flyspell, Ispell, and Aspell to Minimize False Positives in Source Code and Prose](https://www.jamescherti.com/emacs-spell-checker-flyspell-ispell-aspell/)**.
+
+While writing code, variables such as filepath or buffername in comments or docstrings are often flagged as errors, generating visual noise in your programming buffers. This article contains a specific configuration to prevent these false positives.
 
 ### Emacs server
 
@@ -1871,6 +1803,7 @@ In Emacs, customization variables modified via the UI (e.g., `M-x customize`) ar
 (setq mode-line-position-column-line-format '("%l:%C"))
 
 ;; Display of line numbers in the buffer:
+;; Read: https://www.jamescherti.com/emacs-display-line-numbers-mode-performance/
 (setq-default display-line-numbers-type 'relative)
 (dolist (hook '(prog-mode-hook text-mode-hook conf-mode-hook))
   (add-hook hook #'display-line-numbers-mode))
@@ -1880,12 +1813,11 @@ In Emacs, customization variables modified via the UI (e.g., `M-x customize`) ar
 
 (use-package which-key
   :ensure nil
-  :custom
-  (which-key-idle-delay 1.5)
-  (which-key-idle-secondary-delay 0.25)
-  (which-key-add-column-padding 1)
-  (which-key-max-description-length 40)
   :init
+  (setq which-key-idle-delay 1.5)
+  (setq which-key-idle-secondary-delay 0.25)
+  (setq which-key-add-column-padding 1)
+  (setq which-key-max-description-length 40)
   (which-key-mode 1))
 
 (unless (and (eq window-system 'mac)
@@ -1924,12 +1856,9 @@ In Emacs, customization variables modified via the UI (e.g., `M-x customize`) ar
                                 "*esh command on file*"))
 (winner-mode 1)
 
-(use-package uniquify
-  :ensure nil
-  :custom
-  (uniquify-buffer-name-style 'reverse)
-  (uniquify-separator "•")
-  (uniquify-after-kill-buffer-p t))
+(setq uniquify-buffer-name-style 'reverse)
+(setq uniquify-separator "•")
+(setq uniquify-after-kill-buffer-p t)
 
 ;; Window dividers separate windows visually. Window dividers are bars that can
 ;; be dragged with the mouse, thus allowing you to easily resize adjacent
@@ -1948,7 +1877,7 @@ In Emacs, customization variables modified via the UI (e.g., `M-x customize`) ar
 ;; Hide files from dired
 (setq dired-omit-files (concat "\\`[.]\\'"
                                "\\|\\(?:\\.js\\)?\\.meta\\'"
-                               "\\|\\.\\(?:elc|a\\|o\\|pyc\\|pyo\\|swp\\|class\\)\\'"
+                               "\\|\\.\\(?:elc\\|a\\|o\\|pyc\\|pyo\\|swp\\|class\\)\\'"
                                "\\|^\\.DS_Store\\'"
                                "\\|^\\.\\(?:svn\\|git\\)\\'"
                                "\\|^\\.ccls-cache\\'"
@@ -2087,9 +2016,9 @@ These modes are optional and can be added selectively to `~/.emacs.d/post-init.e
   :mode ("\\.csv\\'" . csv-mode)
   :hook ((csv-mode . csv-align-mode)
          (csv-mode . csv-guess-set-separator))
-  :custom
-  (csv-align-max-width 100)
-  (csv-separators '("," ";" " " "|" "\t")))
+  :init
+  (setq csv-align-max-width 100)
+  (setq csv-separators '("," ";" " " "|" "\t")))
 
 ;; Support for Go
 ;;
@@ -2104,8 +2033,8 @@ These modes are optional and can be added selectively to `~/.emacs.d/post-init.e
 (use-package rust-mode
   :commands rust-mode
   :mode ("\\.rs\\'" . rust-mode)
-  :custom
-  (rust-indent-offset 2))
+  :init
+  (setq rust-indent-offset 2))
 
 ;; Major mode for editing crontab files
 (use-package crontab-mode
@@ -2167,26 +2096,25 @@ In addition to regular file-visiting buffers, `buffer-guardian-mode` also handle
 To configure the *buffer-guardian* package, add the following to your `~/.emacs.d/post-init.el`:
 ```elisp
 (use-package buffer-guardian
-  :custom
+  :init
   ;; When non-nil, include remote files in the auto-save process
-  (buffer-guardian-inhibit-saving-remote-files t)
+  (setq buffer-guardian-inhibit-saving-remote-files t)
 
   ;; When non-nil, buffers visiting nonexistent files are not saved
-  (buffer-guardian-inhibit-saving-nonexistent-files nil)
+  (setq buffer-guardian-inhibit-saving-nonexistent-files nil)
 
   ;; Save the buffer even if the window change results in the same buffer
-  (buffer-guardian-save-on-same-buffer-window-change t)
+  (setq buffer-guardian-save-on-same-buffer-window-change t)
 
   ;; Non-nil to enable verbose mode to log when a buffer is automatically saved
-  (buffer-guardian-verbose nil)
+  (setq buffer-guardian-verbose nil)
 
   ;; Save all buffers after N seconds of user idle time. (Disabled by default)
-  ;; (buffer-guardian-save-all-buffers-idle 30)
+  ;; (setq buffer-guardian-save-all-buffers-idle 30)
 
   ;; Save all buffers every N seconds. (Disabled by default)
   ;; (setq buffer-guardian-save-all-buffers-interval (* 60 30))
 
-  :init
   (buffer-guardian-mode 1))
 ```
 
@@ -2344,46 +2272,9 @@ The *straight.el* package is a declarative package manager for Emacs that aims t
 
 ## Frequently asked questions
 
-### Why minimal-emacs.d uses `setq` instead of `setopt`
+### Why minimal-emacs.d uses `setq` instead of `setopt`?
 
-The *minimal-emacs.d* configuration prioritizes an optimized, fast startup. Using `setopt` introduces overhead due to its type checking and function execution. For the vast majority of variables, this overhead is unnecessary during the initial startup phase.
-
-Here is the distinction between the two Emacs Lisp functions:
-
-* `setopt`: Assigns a value, but also validates the data type against the package's definition and executes the `:set` function associated with the customizable variable. The `:set` function specifies a function that must execute whenever the variable's value is changed. This function is responsible for handling required side-effects, such as rebuilding internal data structures, updating hooks, toggling related minor modes, or redrawing user interface elements based on the new value.
-* `setq`: Directly assigns a value to a variable. It is extremely fast because it bypasses type validation and ignores any `:set` side-effect functions defined in the package's `defcustom` declaration.
-
-Here is an example of how a package author might write a `defcustom` with an expensive `:set` property:
-
-```elisp
-;; -------------------------------------------------------------------
-;; EXAMPLE: Why minimal-emacs.d uses `setq' instead of `setopt'
-;; -------------------------------------------------------------------
-;; NOTE: DO NOT ADD THIS CODE SNIPPET TO YOUR CONFIGURATION
-;; -------------------------------------------------------------------
-(defcustom my-global-visual-indicator t
-  "Toggle a heavy visual indicator across all open buffers."
-  :type 'boolean
-  :group 'my-ui-package
-  :set (lambda (symbol value)
-         ;; Update the variable's value
-         (set-default symbol value)
-
-         ;; The slow part: Iterate through every open buffer
-         ;; and trigger a costly visual update or cache rebuild.
-         (dolist (buffer (buffer-list))
-           (with-current-buffer buffer
-             ;; This simulated function might parse the buffer,
-             ;; apply text properties, or query a language server.
-             (my-heavy-visual-update-function value)))
-
-         ;; Force Emacs to immediately redraw all frames
-         (redraw-display)))
-```
-
-If you use `setopt` to configure `my-global-visual-indicator` within your `init.el`, Emacs will execute the associated lambda function during the startup sequence. The function loops through all open buffers (including hidden or internal buffers created during initialization), runs the heavy update function, and forces a display redraw. This introduces significant latency to your load time.
-
-When using `setq`, Emacs simply updates the boolean value to `t` or `nil` in memory and bypasses the lambda entirely. The entire operation takes a fraction of a millisecond.
+The *minimal-emacs.d* configuration prioritizes an optimized, fast startup. Using `setopt` introduces overhead due to its type checking and function execution. For the vast majority of variables, this overhead is unnecessary during the initial startup phase. Read: [Emacs startup: Why setq beats setopt, customize-set-variable, and use-package :custom?](https://www.jamescherti.com/emacs-why-use-setq-instead-setopt/)
 
 ### How to debug my configuration?
 
@@ -2397,10 +2288,12 @@ Enabling `debug-on-error` at this stage allows you to catch errors that might ot
 
 ### Customizing Scroll Recentering
 
-By default, minimal-emacs.d sets `scroll-conservatively` to `20`:
+It is recommended to read: [Configuring Emacs scrolling for better performance and usability](https://www.jamescherti.com/emacs-scrolling-better-performance-usability/)
+
+By default, minimal-emacs.d sets `scroll-conservatively` to `11`:
 
 ```emacs-lisp
-(setq scroll-conservatively 20)  ; Default minimal-emacs.d value
+(setq scroll-conservatively 11)  ; Default minimal-emacs.d value
 ```
 
 This makes Emacs recenters the window when the cursor moves past `scroll-conservatively` lines beyond the window edge.
@@ -2421,23 +2314,8 @@ A value of `101` minimizes screen movement and maintains point visibility with m
 
 The main drawback of `101` is that Emacs will avoid recentering almost entirely, only adjusting the window just enough to keep point visible at the very top or very bottom of the screen. Point can stick to the top or bottom edge of the window, giving you very little context above or below, which can make editing harder if you want surrounding lines visible.
 
-### How to display Emacs startup duration?
-
-To measure and display the time taken for Emacs to start, you can use the following Emacs Lisp function. This function will report both the startup duration and the number of garbage collections that occurred during initialization.
-
-Add the following to your `~/.emacs.d/pre-early-init.el` file:
-```emacs-lisp
-(defun display-startup-time ()
-  "Display the startup time and number of garbage collections."
-  (message "Emacs init loaded in %.2f seconds (Full emacs-startup: %.2fs) with %d garbage collections."
-           (float-time (time-subtract after-init-time before-init-time))
-           (time-to-seconds (time-since before-init-time))
-           gcs-done))
-
-(add-hook 'emacs-startup-hook #'display-startup-time 100)
-```
-
-(Alternatively, you may use the built-in `M-x emacs-init-time` command to obtain the startup duration. However, `emacs-init-time` does not account for the portion of the startup process that occurs after `after-init-time`.)
+Related articles:
+- [Configuring Emacs Scrolling for Better Usability](https://www.jamescherti.com/emacs-scrolling-better-performance-usability/)
 
 ### Optimization: Disabling `site-run-file` and `inhibit-default-init`
 
@@ -2454,8 +2332,8 @@ Both files are typically maintained by operating systems or system administrator
 
 By default, Emacs evaluates `site-start.el` early in the startup process. While useful in managed environments, this introduces two disadvantages for a minimal configuration:
 
-* **Startup overhead**: Additional I/O and evaluation during the earliest phase of initialization.
-* **Loss of determinism**: External configuration may modify variables, alter `load-path`, or introduce behavior that differs across machines.
+- **Startup overhead**: Additional I/O and evaluation during the earliest phase of initialization.
+- **Loss of determinism**: External configuration may modify variables, alter `load-path`, or introduce behavior that differs across machines.
 
 To ensure a clean and reproducible startup, disable this stage in `~/.emacs.d/pre-early-init.el`:
 
@@ -2479,6 +2357,40 @@ To prevent any system configuration from executing after the user initialization
 
 Disabling both `site-run-file` and `default.el` removes system-level interference, reduces startup variability, and establishes a fully controlled initialization environment suitable for minimal and reproducible configurations.
 
+### Splitting your configuration into multiple files
+
+As your configuration grows, your `post-init.el` might become difficult to navigate. A standard practice in Elisp development is to split a large configuration into smaller, modular files organized by topic (e.g., UI, programming languages, Org mode).
+
+Here is how you can organize your custom Elisp files:
+
+**Step 1:** Create a directory to store your modular configuration files, for example, `~/.emacs.d/lisp/`.
+
+**Step 2:** Create your individual configuration files inside the `~/.emacs.d/lisp/` directory. For example, create a file named ``~/.emacs.d/lisp/my-ui-config.el`.
+
+**Step 3:** At the end of `my-ui-config.el`, add the `provide` function so Emacs knows the feature has been loaded:
+
+```elisp
+;;; my-ui-config.el --- UI customizations -*- no-byte-compile: t; lexical-binding: t; -*-
+
+;; Your UI configuration goes here...
+(setq display-line-numbers-type 'relative)
+
+(provide 'my-ui-config)
+```
+
+**Step 4:** Add this new directory to your Emacs `load-path`. You can do this by adding the following line to the top of your `~/.emacs.d/post-init.el` (or `pre-init.el`):
+```elisp
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+```
+
+**Step 5:** Finally, load this file in your `~/.emacs.d/post-init.el` using `require`:
+
+```elisp
+(require 'my-ui-config)
+```
+
+This keeps your `post-init.el` clean and makes it much easier to maintain your setup.
+
 ### How to get the latest version of all packages? (unstable)
 
 By default, *minimal-emacs.d* is configured to prioritize packages from [GNU ELPA](https://elpa.gnu.org/) and [NonGNU ELPA](https://elpa.nongnu.org/) repositories over [MELPA](https://melpa.org/), ensuring greater stability.
@@ -2487,13 +2399,13 @@ If you prefer to obtain the latest packages from MELPA to access new features an
 
 Benefit:
 
-* Ensures access to the **most recent package versions**, enabling early adoption of new features, performance improvements, and upstream bug fixes.
-* Prioritizing MELPA provides a **broader selection of cutting-edge packages**, including experimental or niche tools that may not yet exist in stable archives.
+- Ensures access to the **most recent package versions**, enabling early adoption of new features, performance improvements, and upstream bug fixes.
+- Prioritizing MELPA provides a **broader selection of cutting-edge packages**, including experimental or niche tools that may not yet exist in stable archives.
 
 Drawback:
 
-* Exposure to **potential instability**, as MELPA packages are often built from the latest commits without extensive regression testing.
-* May require **periodic maintenance**, such as resolving dependency conflicts or adapting to API changes in packages that evolve rapidly. (actual breakages are uncommon.)
+- Exposure to **potential instability**, as MELPA packages are often built from the latest commits without extensive regression testing.
+- May require **periodic maintenance**, such as resolving dependency conflicts or adapting to API changes in packages that evolve rapidly. (actual breakages are uncommon.)
 
 To ensure that Emacs always installs or updates to the newest versions of all packages, add the following configuration to `~/.emacs.d/post-early-init.el`:
 
@@ -2742,7 +2654,7 @@ This will ensure that the *minimal-emacs.d* configuration loads `post-early-init
 
 Keep in mind that if you change the `minimal-emacs-user-directory`, *minimal-emacs.d* will attempt to load the rest of the configuration from that directory (e.g., `~/.config/minimal-emacs/post-early-init.el`, `~/.config/minimal-emacs/pre-init.el` and `~/.config/minimal-emacs/post-init.el`, etc.).
 
-### How to make *minimal-emacs.d* install packages in the early-init phase instead of the init phase?
+### How to make minimal-emacs.d install packages in the early-init phase instead of the init phase?
 
 NOTE: Running package initialization and installation during the early-init phase is **NOT RECOMMENDED** because this stage occurs before the GUI system, windowing, and comprehensive error-handling buffers are fully initialized. When package-install or `package-refresh-contents` triggers a failure-such as a TLS handshake error or a lost network connection-Emacs cannot yet render a graphical window to display the backtrace or warning. This results in a "silent" hang or a crash that provides no visual feedback to the user, forcing a pivot to a terminal to inspect standard output. Furthermore, many packages expect a fully functional frame and loaded user environment to configure themselves correctly; forcing them to load during early-init bypasses the intentional separation designed to let you set up UI-independent variables before the package system and GUI logic complicate the startup sequence.
 
@@ -2787,14 +2699,6 @@ To install and load packages during the early-init phase, add the following to `
 ;; TODO: Add your use-package packages here
 ```
 
-### How to compile Emacs for Performance on Linux and Unix systems?
-
-Most Linux distributions ship generic binaries compiled to run safely on a vast array of older hardware configurations. While this ensures broad compatibility, it sacrifices the speed that comes from using the specific, modern instruction sets of your processor. Compiling Emacs directly from source allows instructing the compiler to generate machine code targeted at your CPU architecture, resulting in a faster and more efficient runtime environment.
-
-Beyond raw hardware optimization, building from source enables dropping decades of legacy compatibility layers and embracing modern desktop technologies. For example, Wayland users can configure the build to bypass old X11 display protocols in favor of a Wayland environment, ensuring smoother rendering and better system integration...
-
-If you are interested in compiling Emacs, read: [A Technical Guide to Compiling Emacs for Performance on Linux and Unix systems](https://www.jamescherti.com/compiling-emacs/)
-
 ### How to prevent Emacs from writing custom setting amd maintain a version controller configuration?
 
 If you want to maintain a strictly version-controlled, declarative configuration, you should prevent the Emacs customization interface from automatically appending custom-set-variables blocks to your files.
@@ -2805,25 +2709,27 @@ If you want to maintain a strictly version-controlled, declarative configuration
   (advice-add 'custom-save-all :override #'ignore))
 ```
 
-### Plain Text Pasting (Fixing "Org-Mode Bleed")
+### How to optimize Emacs?
 
-Copying text from an Org buffer often results in unwanted colors, backgrounds, or text weights bleeding into the destination buffer.
+- [Fixing Slow Scrolling in Emacs display-line-numbers-mode](https://www.jamescherti.com/emacs-display-line-numbers-mode-performance/): The display-line-numbers-mode and global-display-line-numbers-mode modes render line numbers in the margin of an Emacs window. Line-number display is implemented in the core C display engine, avoiding the overhead of legacy Elisp overlays like linum-mode. Despite the native C implementation, and even after configuring Emacs scrolling for better usability, specific configurations can still trigger expensive Lisp evaluations during the interactive command loop, vertical scrolling, and buffer initialization. This article outlines configurations that avoid unnecessary width calculations and initialization scans.
 
-By default, vanilla Emacs preserves explicit text formatting (`face` properties) when copying and pasting to support rich-text environments. While standard syntax highlighting (`font-lock-face`) is automatically stripped, modes like `org-mode` rely heavily on the `face` property for their visual styling.
+- [Optimizing Emacs startup - Guide to deferred package loading with use-package](https://www.jamescherti.com/emacs-startup-defer-use-package-performance/): As an Emacs user, your configuration can easily grow from a few lightweight adjustments to a massive, hundred-package IDE. Without careful management, Emacs startup time can degrade from sub-second execution to several seconds, or minutes, in the worst cases. Eager package loading is one common source of startup overhead. This guide explains how Emacs loads libraries, how use-package configures package loading, and how deferred loading can reduce startup time.
 
-To resolve this and ensure that pasted text acts as plain text-immediately inheriting the syntax highlighting of its new destination-add the following to your `~/.emacs.d/post-init.el`:
+- [Emacs: Preventing Org-Mode formatting bleed when copy-pasting](https://www.jamescherti.com/emacs-fix-org-mode-copy-paste-yank-bleed/): Copying text from an Org buffer often results in unwanted colors, backgrounds, or text weights bleeding into the destination buffer. By default, vanilla Emacs preserves explicit text formatting (`face` properties) when copying and pasting to support rich-text environments. While standard syntax highlighting (`font-lock-face`) is automatically stripped, modes like `org-mode` rely heavily on the `face` property for their visual styling.
 
-```elisp
-(add-to-list 'yank-excluded-properties 'face)
+- [Why Your Emacs Terminal is Slow and the Configuration to Fix It (vterm, eat, ghostel, term, and ansi-term)](https://www.jamescherti.com/emacs-terminal-performance-vterm-eat-ansi-term-ghostel/): Emacs terminal buffers like eat, vterm, ghostel, term, and ansi-term can become slow when processing large volumes of standard output. Watching Emacs freeze while a build script dumps thousands of lines is frustrating, but terminal latency is not an unavoidable cost of living inside Emacs. Applying a few targeted configuration changes will eliminate scroll lag and restore immediate responsiveness. This article provides a configuration that speed up terminal buffers...
 
-```
+- [Measuring Emacs Startup Time More Accurately Than the Built-in emacs-init-time Function](https://www.jamescherti.com/measuring-emacs-startup-time/): As an Emacs configuration grows, startup time can gradually increase. Measuring that increase accurately makes it easier to identify regressions. However, the built-in emacs-init-time function does not measure the entire startup sequence.
 
-Benefits:
+- [A Technical Guide to Compiling Emacs for Performance on Linux and Unix systems](https://www.jamescherti.com/compiling-emacs/): Most Linux distributions ship generic binaries compiled to run safely on a vast array of older hardware configurations. While this ensures broad compatibility, it sacrifices the speed that comes from using the specific, modern instruction sets of your processor. Compiling Emacs directly from source allows instructing the compiler to generate machine code targeted at your CPU architecture, resulting in a faster and more efficient runtime environment. Beyond raw hardware optimization, building from source enables dropping decades of legacy compatibility layers and embracing modern desktop technologies. For example, Wayland users can configure the build to bypass old X11 display protocols in favor of a Wayland environment, ensuring smoother rendering and better system integration...
 
-* Prevents visual formatting bleed between different major modes.
-* Unlike the common workaround of stripping all text properties entirely `(setq yank-excluded-properties t)`, this method is surgical. It *only* removes visual properties, ensuring that functional text properties remain fully intact.
+- [Is Emacs slow on files with very long lines? Here is how to fix it (e.g, minified JavaScript or CSS, SQL dumps, large JSON files...)](https://www.jamescherti.com/prevent-emacs-freeze-so-long-files-very-long-lines/): Emacs can slow down when opening files with exceptionally long lines, such as minified JavaScript or CSS, SQL dumps, or large JSON files. One solution to prevent these files from slowing down Emacs is to use the built-in global-so-long-mode (or so-long-mode). When you visit such files, this mode detects abnormally long lines and automatically disables expensive minor modes that could slow down or, in the worst cases, freeze Emacs. Below is a configuration to improve how global-so-long-mode handles these files, balancing performance and usability.
 
-This configuration intentionally disables the ability to copy and paste rich-text formatting. If you specifically require the preservation of text colors or weights across buffers (for example, when using `enriched-mode` or composing HTML emails), you should omit this setting.
+### Emacs Security
+
+- [Securing and reducing prompts for Emacs .dir-locals.el and local variables](https://www.jamescherti.com/securing-emacs-dir-locals-el-local-variables/): Emacs automatically applies project-specific configurations through file-local and directory-local (.dir-locals.el) variables when opening a file or directory. While this feature ensures consistent settings across environments, it can cause security risks and persistent prompt fatigue when editing source code. Malicious .dir-locals.el files or file-local variables containing eval forms can execute arbitrary Lisp code if Emacs is configured to evaluate them, or if the user approves the relevant prompt by mistake. This article outlines configurations for securing file-local and directory-local variables while reducing prompts.
+
+- [The Emacs security settings that might silently compromise your system](https://www.jamescherti.com/emacs-security-settings/): Emacs ships with default settings intended for backward compatibility and convenience over strict security. The following settings enforce TLS certificate verification, reduce unintended ffap network lookups, restrict the evaluation of potentially unsafe local file, and directory variables, automated package review system, and protect authentication credentials stored by Emacs.
 
 ### Minimal-emacs.d configurations from users
 
@@ -2843,62 +2749,66 @@ This configuration intentionally disables the ability to copy and paste rich-tex
 
 - [ZforCandY minimal-emacs.d configuration](https://codeberg.org/ZforCandY/priv-conf/src/branch/main/minimal-emacs.d)
 
+- [mgd/mgd-emacs](https://codeberg.org/mgd/mgd-emacs)
+
+- [hotel-california-of-creative-writing](https://codeberg.org/jacmoe/hotel-california-of-creative-writing)
+
 ## Features
 
 The minimal-emacs.d base provides a sensible foundation for your personal configuration. It addresses common pain points in vanilla Emacs to provide a responsive and clean environment from the start, without forcing a specific workflow.
 
 ### Fast Initialization and Performance
 
-* **Optimized File Handlers:** Defers garbage collection during startup to reduce load times, restoring it to a standard threshold once Emacs is ready.
-* **Process Throughput:** Increases the chunk size for reading from processes to speed up external tool interactions.
-* **Compiled File Preference:** Instructs Emacs to prioritize loading newer byte-compiled files.
-* **Optimized Text Rendering:** Disables font compacting during startup to reduce memory usage and speed up initialization.
-* **Silent Boot Sequence:** Removes the GNU Emacs startup message, unsets OS-irrelevant command line options, and defers toolbar setup.
+- **Optimized File Handlers:** Defers garbage collection during startup to reduce load times, restoring it to a standard threshold once Emacs is ready.
+- **Process Throughput:** Increases the chunk size for reading from processes to speed up external tool interactions.
+- **Compiled File Preference:** Instructs Emacs to prioritize loading newer byte-compiled files.
+- **Optimized Text Rendering:** Disables font compacting during startup to reduce memory usage and speed up initialization.
+- **Silent Boot Sequence:** Removes the GNU Emacs startup message, unsets OS-irrelevant command line options, and defers toolbar setup.
 
 ### Native Compilation and Byte Compilation
 
-* **Out-of-the-Box Optimization:** Configures default settings for native and byte compilation.
-* **Quiet Compilation:** Suppresses warnings and errors during async native compilation to prevent popup interruptions.
+- **Out-of-the-Box Optimization:** Configures default settings for native and byte compilation.
+- **Quiet Compilation:** Suppresses warnings and errors during async native compilation to prevent popup interruptions.
 
 ### Interface Defaults
 
-* **Minimal UI:** Disables the startup screen, menu bar, tool bar, and scroll bars by default to maximize screen space.
-* **Smart Rendering:** Stops rendering cursors and region highlights in non-focused windows. Prevents Emacs from automatically resizing frames on setting adjustments.
-* **Typographic Defaults:** Renders underlines at the descent line, replaces truncation markers with an ellipsis ("..."), and disables the visible bell.
-* **Focused Minibuffer:** Enables recursive minibuffers and restricts the cursor from entering read-only prompt areas.
+- **Minimal UI:** Disables the startup screen, menu bar, tool bar, and scroll bars by default to maximize screen space.
+- **Smart Rendering:** Stops rendering cursors and region highlights in non-focused windows. Prevents Emacs from automatically resizing frames on setting adjustments.
+- **Typographic Defaults:** Renders underlines at the descent line, replaces truncation markers with an ellipsis ("..."), and disables the visible bell.
+- **Focused Minibuffer:** Enables recursive minibuffers and restricts the cursor from entering read-only prompt areas.
 
 ### Package and File Management
 
-* **Repository Prioritization:** Configures archives and sets explicit priorities for GNU ELPA, NonGNU ELPA, and MELPA.
-* **Centralized Artifacts:** Routes auto-save and backup files to dedicated subdirectories within the Emacs configuration folder. Enables versioned backups.
-* **Auto-Revert:** Refreshes buffers when the underlying file changes on disk. (Disabled by default.)
-* **Session Memory:** Saves cursor positions across sessions, maintains recent file history, and persists the minibuffer history. (Disabled by default.)
+- **Repository Prioritization:** Configures archives and sets explicit priorities for GNU ELPA, NonGNU ELPA, and MELPA.
+- **Centralized Artifacts:** Routes auto-save and backup files to dedicated subdirectories within the Emacs configuration folder. Enables versioned backups.
+- **Auto-Revert:** Refreshes buffers when the underlying file changes on disk. (Disabled by default.)
+- **Session Memory:** Saves cursor positions across sessions, maintains recent file history, and persists the minibuffer history. (Disabled by default.)
 
 ### Precision Editing and UX Enhancements
 
-* **Predictable Scrolling:** Configures conservative scrolling to eliminate default half-screen jumps.
-* **Modern Formatting Standards:** Enforces a POSIX-compliant final newline on save, disables double-space sentence endings, and triggers smart indentation only on newlines and backspaces.
-* **Sensible Tab Management:** Defaults to spaces with a tab width. Configures the tab key to indent first, then complete.
-* **Fast Interactions:** Configures prompts to accept "y" or "n" instead of "yes" or "no".
+- **Predictable Scrolling:** Configures conservative scrolling to eliminate default half-screen jumps.
+- **Modern Formatting Standards:** Enforces a POSIX-compliant final newline on save, disables double-space sentence endings, and triggers smart indentation only on newlines and backspaces.
+- **Sensible Tab Management:** Defaults to spaces with a tab width. Configures the tab key to indent first, then complete.
+- **Fast Interactions:** Configures prompts to accept "y" or "n" instead of "yes" or "no".
 
 ### Developer Experience
 
-* **Optional Built-in Package Defaults:** Configures optimized settings for built-in packages like Eglot, recentf, savehist, and auto-save without enabling them by default.
-* **Git Integration:** Sets version control to use the `--histogram` diff algorithm and automatically follow file renames in logs.
+- **Optional Built-in Package Defaults:** Configures optimized settings for built-in packages like Eglot, recentf, savehist, and auto-save without enabling them by default.
+- **Git Integration:** Sets version control to use the `--histogram` diff algorithm and automatically follow file renames in logs.
 
 ### Buffer, Directory, and Window Management
 
-* **Modern Splits:** Favors vertical window splits over horizontal ones.
-* **Ediff Optimization:** Configures Ediff to use a single frame and split windows horizontally.
-* **Dired Mastery:** Enables `dired-dwim-target` for easier file operations between panes. Auto-updates Dired buffers and cleans up deleted directories silently.
-* **Window Dividers:** Uses minimalistic window dividers and sets default fringe widths.
+- **Modern Splits:** Favors vertical window splits over horizontal ones.
+- **Ediff Optimization:** Configures Ediff to use a single frame and split windows horizontally.
+- **Dired Mastery:** Enables `dired-dwim-target` for easier file operations between panes. Auto-updates Dired buffers and cleans up deleted directories silently.
+- **Window Dividers:** Uses minimalistic window dividers and sets default fringe widths.
 
 ### Security, Stability, and Customizable Initialization
 
-* **Safety Checks:** Verifies successful configuration load and warns of conflicts with legacy `~/.emacs` files.
-* **Drop-In Customization:** Supports loading modular configuration files (`pre-early-init.el`, `post-early-init.el`, `pre-init.el`, and `post-init.el`) to hook into different stages of the startup process.
-* **Strict TLS Verification:** Enforces strict SSL/TLS certificate checks and raises the minimum encryption strength for GnuTLS.
-* **Encrypted Auth Sources:** Prefers GPG-encrypted authentication files (`~/.authinfo.gpg`) and directs the GPG agent to use the minibuffer for passphrase entry.
+- **Safety Checks:** Verifies successful configuration load and warns of conflicts with legacy `~/.emacs` files.
+- **Drop-In Customization:** Supports loading modular configuration files (`pre-early-init.el`, `post-early-init.el`, `pre-init.el`, and `post-init.el`) to hook into different stages of the startup process.
+- **Strict TLS Verification:** Enforces strict SSL/TLS certificate checks and raises the minimum encryption strength for GnuTLS.
+- **Encrypted Auth Sources:** Prefers GPG-encrypted authentication files (`~/.authinfo.gpg`) and directs the GPG agent to use the minibuffer for passphrase entry.
 
 ## Author and license
 
@@ -2914,12 +2824,15 @@ You should have received a copy of the GNU General Public License along with thi
 
 ## Links
 
+- [minimal-emacs.d @jamescherti.com: A Customizable Emacs init.el and early-init.el for Better Defaults and Optimized Startup](https://www.jamescherti.com/minimal-emacs-d/)
 - [minimal-emacs.d @GitHub](https://github.com/jamescherti/minimal-emacs.d)
 
 Contribution from the minimal-emacs.d community:
+
 - [Sunng's minimal-emacs.d Nix flake](https://codeberg.org/sunng/minimal-emacs.d-nix-hm): A Nix flake that enables reproducible deployment of minimal-emacs.d, allowing the Emacs configuration to be pinned, built, and installed through Nix.
 
 Other Emacs packages by the same author:
+
 - [compile-angel.el](https://github.com/jamescherti/compile-angel.el): **Speed up Emacs!** This package guarantees that all .el files are both byte-compiled and native-compiled, which significantly speeds up Emacs.
 - [outline-indent.el](https://github.com/jamescherti/outline-indent.el): An Emacs package that provides a minor mode that enables code folding and outlining based on indentation levels for various indentation-based text files, such as YAML, Python, and other indented text files.
 - [easysession.el](https://github.com/jamescherti/easysession.el): Easysession is lightweight Emacs session manager that can persist and restore file editing buffers, indirect buffers/clones, Dired buffers, the tab-bar, and the Emacs frames (with or without the Emacs frames size, width, and height).
