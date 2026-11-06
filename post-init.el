@@ -206,17 +206,30 @@
 ;; Configure Eglot to enable or disable certain options for the pylsp server
 ;; in Python development. (Note that a third-party tool,
 ;; https://github.com/python-lsp/python-lsp-server, must be installed),
+
+(add-to-list 'major-mode-remap-alist '(python-mode . python-ts-mode))
 (add-hook 'python-mode-hook #'eglot-ensure)
 (add-hook 'python-ts-mode-hook #'eglot-ensure)
+
+(add-to-list 'major-mode-remap-alist '(c-mode . c-ts-mode))
+(add-to-list 'major-mode-remap-alist '(c++-mode . c++-ts-mode))
+(add-hook 'c-ts-mode-hook #'eglot-ensure)
+(add-hook 'c++-ts-mode-hook #'eglot-ensure)
 
 (with-eval-after-load 'eglot
   (add-to-list 'eglot-server-programs
                '(python-base-mode . ("rass" "basedruff"))))
 
-;; (add-hook 'python-base-mode-hook
-;;           (lambda ()
-;;             (eglot-ensure)
-;;             (add-hook 'after-save-hook 'eglot-format nil t)))
+(add-hook 'python-base-mode-hook
+          (lambda ()
+            (eglot-ensure)
+            (add-hook 'after-save-hook 'eglot-format nil t)))
+
+(add-hook 'c-ts-base-mode-hook
+          (lambda ()
+            (eglot-ensure)
+            (add-hook 'before-save-hook #'eglot-format-buffer nil t)))
+
 ;; (use-package flymake-ruff)
 ;; (add-hook 'python-mode-hook #'flymake-ruff-load)
 ;; (use-package ruff-format)
@@ -287,6 +300,22 @@
 
 (use-package autothemer)
 (add-to-list 'custom-theme-load-path (expand-file-name "themes" user-emacs-directory))
+
+;; Pre-define and break the circular inheritance for Swiper faces
+;; (with-eval-after-load 'swiper
+;;   (set-face-attribute 'swiper-background-match-face-4 nil :inherit nil))
+
+;; 1. Pre-define and break inheritance loops for all Swiper match faces
+(dolist (face '(swiper-match-face-1
+                swiper-match-face-2
+                swiper-match-face-3
+                swiper-match-face-4
+                swiper-background-match-face-1
+                swiper-background-match-face-2
+                swiper-background-match-face-3
+                swiper-background-match-face-4))
+  (set-face-attribute face nil :inherit nil))
+;; 2. Load the theme
 (load-theme 'github-dark t)
 
 (use-package devcontainer)
@@ -307,3 +336,25 @@
 (add-hook 'typescript-ts-mode-hook #'eglot-ensure)
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . typescript-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . tsx-ts-mode))
+
+(use-package kubernetes
+  :ensure t
+  :commands (kubernetes-overview)
+  :config
+  (setq kubernetes-poll-frequency 3600
+        kubernetes-redraw-frequency 3600))
+
+(unless (and (eq window-system 'mac)
+             (bound-and-true-p mac-carbon-version-string))
+  ;; Enables `pixel-scroll-precision-mode' on all operating systems and Emacs
+  ;; versions, except for emacs-mac.
+  ;;
+  ;; Enabling `pixel-scroll-precision-mode' is unnecessary with emacs-mac, as
+  ;; this version of Emacs natively supports smooth scrolling.
+  ;; https://bitbucket.org/mituharu/emacs-mac/commits/65c6c96f27afa446df6f9d8eff63f9cc012cc738
+  (setq pixel-scroll-precision-use-momentum nil) ; Precise/smoother scrolling
+  (pixel-scroll-precision-mode 1)
+  (setq pixel-scroll-precision-interpolate-mice t
+        pixel-scroll-precision-large-scroll-height 1
+        pixel-scroll-precision-interpolation-total-time 0.15
+        pixel-scroll-precision-interpolation-factor 1.0))
